@@ -1,0 +1,30 @@
+# Secrets & credentials
+*.key
+*.pem
+*.crt
+*.p12
+*.gpg
+*.asc
+*secret*
+*token*
+*credential*
+
+# SSH
+config/ssh/
+
+# Git credentials
+config/git/credentials
+config/git/config
+
+# Environment files
+.env
+.env.*
+
+# Editor/OS junk
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Backup files (don't need these in repo)
+*.bak.*

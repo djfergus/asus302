@@ -11,7 +11,8 @@ This project manages the configuration of an ASUS Chromebook Flip C302 running O
 5. **Respect the hardware.** This is a low-power machine (m3-6Y30, 3.7 GB RAM, 58 GB eMMC). Prefer lightweight solutions. Avoid heavy animations, blur, or resource-intensive settings.
 6. **Test changes.** After editing Hyprland configs, verify with `hyprctl reload`. For Waybar, run `omarchy-restart-waybar`. Check the notes for component-specific reload commands.
 7. **Track changed files.** When config files are modified, copy them into the `config/` directory in this repo mirroring their path under `~/.config/` (e.g. `~/.config/hypr/bindings.conf` → `config/hypr/bindings.conf`). Commit and push after changes.
-8. **Chromebook keyboard.** The top row keys are F1-F10 but have been remapped to their printed Chromebook functions (back, forward, refresh, fullscreen, overview, brightness, volume). SUPER+F-key sends the actual F-key. See notes entry #1 for details.
+8. **No secrets or personal info.** Never commit passwords, API keys, tokens, SSH keys, email addresses, or personal URLs. Review files before `git add`. The `.gitignore` blocks common sensitive patterns but is not a substitute for vigilance. Config files with personal webapp URLs or account-specific details should be sanitized or excluded.
+9. **Chromebook keyboard.** The top row keys are F1-F10 but have been remapped to their printed Chromebook functions (back, forward, refresh, fullscreen, overview, brightness, volume). SUPER+F-key sends the actual F-key. See notes entry #1 for details.
 
 ## Key Files
 
