@@ -39,3 +39,17 @@ Remapped the top row F1-F10 keys to match the icons printed on the Chromebook ke
 **SUPER + F1-F10** sends the original F-key to the active window via `sendshortcut`.
 
 Volume keys (F8-F10) use `bindeld`/`bindeld` for key-repeat support on hold.
+
+### 2. Remove Window Gaps and Borders (2026-04-05)
+
+**File:** `~/.config/hypr/looknfeel.conf` (backup created with timestamp)
+
+Removed gaps and reduced borders so windows fill the entire screen with minimal wasted space. Better suited for the small 12.5" display.
+
+| Setting | Before | After |
+|---------|--------|-------|
+| `gaps_in` | 5 | 0 |
+| `gaps_out` | 10 | 0 |
+| `border_size` | 2 | 1 |
+
+Windows now tile edge-to-edge with no gaps. A thin 1px border remains to visually distinguish the focused window.
